@@ -41,13 +41,14 @@
 	padding: 10px;
 	border-radius: 2px;
 }
-.article-details h6,
-.article-details p {
-	font-size: clamp(0.5rem, 1vw, 2rem);
+.article-details h6 {
+	font-size: clamp(0.6rem, 1.3vw, 2rem);
+	font-weight: bold;
 }
 .article-details .description {
 	font-size: clamp(0.5rem, 0.5vw, 1rem);
 }
+
 #menus .article-details .description {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
@@ -78,8 +79,10 @@
 }
 
 @media (min-width: 48rem) {
-	.article-details h6,
-	.article-details p {
+	.article-details .description {
+		font-size: 0.5rem;
+	}
+	.article-details h6 {
 		font-size: 0.6rem;
 	}
 }
