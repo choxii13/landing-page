@@ -41,8 +41,12 @@
 	padding: 10px;
 	border-radius: 2px;
 }
-.article-details h6 {
-	font-size: clamp(0.6rem, 1vw, 2rem);
+.article-details h6,
+.article-details p {
+	font-size: clamp(0.5rem, 1vw, 2rem);
+}
+.article-details .description {
+	font-size: clamp(0.5rem, 0.5vw, 1rem);
 }
 #menus .article-details .description {
 	display: -webkit-box;
@@ -54,6 +58,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 5px;
 }
 
 .bi-caret-right-fill {
@@ -72,8 +77,9 @@
 	gap: 5px;
 }
 
-@media (min-width: 100rem) {
-	.article-details h6 {
-		font-size: 0.7rem;
+@media (min-width: 48rem) {
+	.article-details h6,
+	.article-details p {
+		font-size: 0.6rem;
 	}
 }
