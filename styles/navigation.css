@@ -1,0 +1,72 @@
+header {
+	position: relative;
+	height: 20rem;
+	margin: auto;
+}
+header .section-item {
+	padding-top: 0.5rem;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 2.3rem;
+	border-bottom: 1px solid white;
+	margin-bottom: 7rem;
+}
+
+nav ul {
+	display: none;
+	gap: 30px;
+}
+
+.contact-actions {
+	display: flex;
+	gap: 10px;
+}
+
+.breadcrumbs-menu {
+	display: flex;
+}
+
+.breadcrumbs-menu li + li:before {
+	padding: 8px;
+	color: rgb(255, 253, 253);
+	content: '/\00a0';
+}
+
+.breadcrumbs-menu li {
+	text-decoration: none;
+}
+
+.breadcrumbs-menu li a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#mobile-menu-btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border: none;
+	cursor: pointer;
+	height: 2rem;
+	background-color: transparent;
+	padding: 0;
+	/* display: none; */
+}
+
+#mobile-menu-btn span {
+	width: 1.8rem;
+	height: 0.15rem;
+	background-color: white;
+}
+
+@media (min-width: 48rem) {
+	nav ul {
+		display: flex;
+	}
+	#mobile-menu-btn {
+		display: none;
+	}
+}

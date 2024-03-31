@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 1rem;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+p {
+	font-size: 0.59rem;
+	color: grey;
+}
+
+:root {
+	/* 60-30-10 */
+	--article-title: 1rem;
+	--main-color-bg: #212020;
+	--primary-color-bg: #303130;
+	--semi-color-700: #ff7f11;
+	--text-color-main: white;
+
+	/* section/ padding/margin */
+	--spacing: 2rem;
+
+	/* button / padding//margin */
+
+	/* header/margin */
+	--border-radius: 4px;
+	--linear-gradient: linear-gradient(
+		to right,
+		var(--semi-color-700),
+		rgb(143, 8, 8)
+	);
+}
+body {
+	background-color: var(--main-color-bg);
+	color: var(--text-color-main);
+}
+
+::-webkit-scrollbar {
+	width: 1rem;
+	border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--primary-color-bg);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: #808080;
+	border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #bbb;
+}
+html {
+	scroll-behavior: smooth;
+	width: 100%;
+}
+
+main,
+footer,
+section {
+	margin: auto;
+	width: 100%;
+}
+
+section {
+	position: relative;
+}
+.section-item {
+	width: 90%;
+	margin: auto;
+	max-width: 60rem;
+	padding: 3rem 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.btn {
+	font: inherit;
+	background-color: yellow;
+	border: none;
+	border-radius: 30px;
+	font-size: 0.7rem;
+	padding: 2px 10px;
+	font-weight: 700;
+	transition: background-color 0.5s;
+}
+.btn.alt {
+	font: inherit;
+	width: 5rem;
+	font-size: 0.7rem;
+}
+
+.btn.alt:hover,
+.btn.alt.active .btn:hover,
+.btn.active {
+	background-color: rgb(161, 161, 10);
+	cursor: pointer;
+}
+
+.yellow {
+	color: var(--semi-color-700);
+	font-weight: 600;
+}
+
+.title {
+	font-size: 0.8rem;
+	color: white;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.controller-text {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.background-image {
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	filter: opacity(40%);
+	width: 100%;
+}
+
+.breadcrumbs-menu li,
+.footer-nav ul li {
+	text-decoration: underline rgba(255, 254, 254, 0);
+	transition: text-decoration 1s, color 1s;
+}
+.breadcrumbs-menu li:hover,
+.footer-nav ul li:hover,
+nav ul li:hover {
+	text-decoration-color: rgb(255, 252, 252);
+	cursor: pointer;
+	color: var(--semi-color-700);
+}
+
+.logo {
+	height: 2.5rem;
+	width: 4rem;
+	border-radius: 10px;
+	padding: 5px;
+	object-fit: cover;
+}
+.logo:hover {
+	cursor: pointer;
+	filter: brightness(70%);
+}
+
+@media (min-width: 100rem) {
+	main,
+	footer,
+	section,
+	header,
+	.background-image,
+	hr {
+		margin: auto;
+		width: 60rem;
+	}
+}

@@ -1,0 +1,98 @@
+footer .section-item,
+.time {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.section-item .section-div {
+	width: clamp(1rem, 20%, 12rem);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.opening-hours div p:nth-child(1) {
+	color: white;
+}
+
+.footer-contacts p:nth-child(1) {
+	font-weight: bold;
+	color: white;
+}
+
+i {
+	color: var(--semi-color-700);
+	margin-right: 5px;
+}
+
+footer i {
+	cursor: pointer;
+}
+
+footer input {
+	height: 2rem;
+}
+
+/*  font-size-resposnive */
+footer h5 {
+	font-size: clamp(0.6rem, 1vw, 1rem);
+}
+.opening-hours div p {
+	font-size: clamp(0.4rem, 1vw, 0.6rem);
+}
+footer p {
+	font-size: clamp(0.4rem, 1vw, 1rem);
+}
+footer i {
+	font-size: clamp(0.6rem, 1vw, 1rem);
+}
+
+hr {
+	border-color: gray;
+}
+
+.footer-nav .footer-padding {
+	padding: 20px;
+}
+.footer-nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	color: grey;
+	font-size: 0.6rem;
+}
+
+.footer-nav p {
+	text-align: center;
+}
+
+footer .logo {
+	height: 5rem;
+	width: clamp(2rem, 100%, 5rem);
+}
+
+.ph-foods {
+	display: flex;
+	flex-direction: row;
+	width: 40rem;
+	width: 95%;
+	margin: 0 auto;
+	justify-content: center;
+	position: relative;
+}
+.ph-foods img {
+	height: 5rem;
+	width: clamp(1rem, 10%, 9rem);
+	object-fit: cover;
+	transition: width 1s;
+}
+
+.ph-foods img:hover,
+.ph-foods img:hover.active {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: transform 1s;
+	width: 100%;
+}
