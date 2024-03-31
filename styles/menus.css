@@ -27,7 +27,7 @@
 }
 
 #menus img {
-	max-height: 6rem;
+	height: 6rem;
 	width: clamp(1rem, 80%, 8rem);
 	object-fit: cover;
 }
@@ -40,6 +40,9 @@
 	left: 120px;
 	padding: 10px;
 	border-radius: 2px;
+}
+.article-details h6 {
+	font-size: clamp(0.6rem, 1vw, 2rem);
 }
 #menus .article-details .description {
 	display: -webkit-box;
@@ -69,5 +72,8 @@
 	gap: 5px;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 100rem) {
+	.article-details h6 {
+		font-size: 0.7rem;
+	}
 }
